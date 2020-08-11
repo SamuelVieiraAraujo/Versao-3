@@ -1,0 +1,350 @@
+html, body {
+    margin: 0;
+}
+body {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, Arial, Helvetica, sans-serif;
+}
+/*-------Header-------*/
+header{
+    background-color: black;
+    color: white;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    list-style: none;
+}
+header #logo {
+    position: absolute;
+    top: 15px;
+    float: left;
+    height: 65px;
+    width: 165px;
+}
+header #logo img{
+    max-height: 100%;
+}
+header .menu {
+    float: right;
+    list-style: none;
+    margin-top: 17x;
+    margin-right: 5%;
+}
+header .menu li {
+    float: left;
+    font-size: 18px;
+    padding: 20px 20px 20px 20px;
+}
+header .menu li a {
+    color: initial;
+    text-decoration: initial;
+    color: white;
+}
+header .menu li:hover {
+    background-color: #01AAEA;
+    border-radius: 15px;
+}
+
+/*------- Capa -------*/
+#logo{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+    list-style: none;
+}
+#Imagem_fundo {
+    background: url("img/fundo1.jpg");
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#título{
+    color:white;
+    padding-top: 20%;
+    font-size: 55px;
+    line-height: 0.6;
+}
+#acao{
+    color:white;
+    border: 1px white solid;
+    padding: 10px 20px 10px 20px;
+}
+.Icone{
+    width: 125px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+#projeto{
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+#metas{
+    padding: 20px;
+}
+.imeco{
+    width: 70%;
+    height: 15%;
+}
+/*------COLUNAS------*/
+.coluna{
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.coluna.quatro {
+    width: 15%;
+    padding: 0 5% 0 5%;
+}
+.coluna.tres {
+    width: 29%;
+    padding: 2%;
+}
+.coluna.dois {
+    width: 40%;
+}
+.coluna .icone {
+    border-radius: 50%;
+    height: 85px;
+    width: 85px;
+    text-align: center;
+    margin: 0 auto;
+}
+.coluna .icone img{
+    max-width: 60%;
+    max-height: 60%;
+    margin: 15px;
+}
+.coluna img {
+    height: 300px;
+    width: 100%;
+}
+/* --------  Textos  -------- */
+.dois{
+    width: 40%;
+}
+.quatro{
+    width: 15%;
+}
+.justificado{
+    text-align: justify;
+}
+.centralizado{
+    text-align: center;
+}
+h2 {
+    color: white;
+    border-top: 3px solid white;
+    font-size: 25px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-top: 10px;
+}
+h3 {
+    color: black;
+    font-size: 20px;
+}
+h4 {
+    color: black;
+}
+h5 {
+    color: white;
+    font-size: 25px;
+}
+#sobre{
+    width: 97%;
+}
+/*------FOOTER------*/
+footer{
+    background-color: #01AAEA;
+    float: left;
+    width: 100%;
+    height: 30%;
+    color: white;
+    padding: 30px 0px 50px 0px;
+}
+.link2 {
+    color: black;
+    text-decoration: initial;  
+}
+.link2:hover {
+    color: black;
+}  
+/*-------HAMBURGUER-------*/
+#lista
+{
+  display: block;
+  position: relative;
+  top: -10px;
+  left: 20px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#lista a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#lista a:hover
+{
+  color: #FF6347;
+}
+
+#lista input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#lista span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#lista span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#lista span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#lista input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#lista input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#lista input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menus{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menus li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#lista input:checked ~ ul
+{
+  transform: none;
+}
+#lista {
+  visibility: hidden;
+}
+/* --------  Responsividade  --------*/
+
+@media all and (max-width: 768px) {
+#menu {
+    visibility: hidden;
+} 
+#lista {
+    visibility: visible;
+}
+.coluna, .coluna.quatro, .coluna.tres, .coluna.dois {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 10px auto;
+    float: none;
+}
+.header1 {
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+footer{
+    background-color: #01AAEA;
+    float: left;
+    width: 100%;
+    height: 50%;
+    color: white;
+    padding: 30px 0px 50px 0px;
+}
+.imeco{
+    width: 15%;
+    height: 20%;
+}
+#sobre{
+    width: 85%;
+}
+#altura {
+    height: 15%;
+}
+#largura {
+    width: 30%;
+}
+#logodiv {
+    height: 50%;
+    width: 85%;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+}
+.menu {
+  visibility: hidden;
+}
+}
